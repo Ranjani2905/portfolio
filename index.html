@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,5 +10,9 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      var path = window.location.pathname.split("/");
+      if (path.length > 2) window.location.replace("/portfolio/");
+    </script>
   </body>
 </html>
